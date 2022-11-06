@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+  --red: #EF5753;
+  --white: #FFFFFF;
+  --black: #0e0b0b;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+
+body {
+  background-color: var(--red);
+}
+
+main {
+  background-color: var(--white);
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--red);
+  font-size: 18px;
+  color: var(--white);
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: opacity(0.9);
+}
