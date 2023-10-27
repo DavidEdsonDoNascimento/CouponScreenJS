@@ -63,7 +63,7 @@ button:hover {
   width: 170px;
 }
 
-img {
+.produto-img {
   border-radius: 10px;
   width: 100%;
   height: 75%;
@@ -92,4 +92,31 @@ img {
   width: 40px;
   font-weight: bold;
   font-size: 0.8rem;
+}
+
+.carrinho-img {
+  width: 100px;
+  height: 100px;
+}
+
+.carrinho-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carrinho-itens {
+
+}
+
+.carrinho-btn-remover {
+  
 }

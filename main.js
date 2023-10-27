@@ -54,7 +54,7 @@ const produtos = [
 ];
 
 const divMensagem = document.querySelector(".mensagem");
-const divProdutos = document.querySelector(".produtos");
+const divProdutos = document.querySelector(".produtos-lista");
 
 function carregaDivProdutos() {
   const ulProdutos = document.createElement("ul");
@@ -64,7 +64,7 @@ function carregaDivProdutos() {
     li.setAttribute("class", "produto-cartao");
     li.innerHTML = `
     <div class='box-img'>
-      <img src='${p.img}'>
+      <img src='${p.img}' class='produto-img'>
     </div>
     <div class='produto-labels'>
       <label class='produto-nome'>${p.name}</label>
