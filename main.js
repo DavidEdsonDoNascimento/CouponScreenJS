@@ -29,27 +29,27 @@ const produtos = [
     categoryId: 1,
     img: "./imgs/misto.png",
   },
-  { id: 2, name: "Cafe", price: 2.75, categoryId: 2, img: "./imgs/misto.png" },
+  { id: 2, name: "Cafe", price: 2.75, categoryId: 2, img: "./imgs/cafe.jpeg" },
   {
     id: 3,
     name: "Cafe c/ leite",
     price: 2.99,
     categoryId: 2,
-    img: "./imgs/misto.png",
+    img: "./imgs/cafecomleite.jpeg",
   },
   {
     id: 4,
     name: "Coca-Cola lata",
     price: 4.99,
     categoryId: 2,
-    img: "./imgs/misto.png",
+    img: "./imgs/cocacola.png",
   },
   {
     id: 5,
     name: "Pao de queijo",
     price: 1.2,
     categoryId: 1,
-    img: "./imgs/misto.png",
+    img: "./imgs/paodequeijo.png",
   },
 ];
 
@@ -63,7 +63,9 @@ function carregaDivProdutos() {
     const li = document.createElement("li");
     li.setAttribute("class", "produto-cartao");
     li.innerHTML = `
-    <img src='${p.img}'>
+    <div class='box-img'>
+      <img src='${p.img}'>
+    </div>
     <div class='produto-labels'>
       <label class='produto-nome'>${p.name}</label>
       <label class='produto-preco'>R$ ${p.price

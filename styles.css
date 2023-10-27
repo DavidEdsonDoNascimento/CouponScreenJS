@@ -58,6 +58,11 @@ button:hover {
   list-style: none;
 }
 
+.box-img {
+  height: 170px;
+  width: 170px;
+}
+
 img {
   border-radius: 10px;
   width: 100%;
