@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Padaria</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <h1>Autoatendimento</h1>
-      <section>
-        <h2>Objetivos dessa brincadeira:</h2>
-        <ul>
-          <li>Adicionar itens a um carrinho</li>
-          <li>Deter o total da compra ao final</li>
-          <li>Aplicar cupom valido</li>
-          <li>Finalizar venda com uma mensagem amigavel</li>
-        </ul>
-      </section>
-      <section class="produtos">
-        <h2>Cardapio</h2>
-        <div class="produtos-lista"></div>
-        <div class="carrinho-container">
-          <div class="carrinho">
-            <div class="carrinho-itens"></div>
-            <div class="carrinho-btn-remover"></div>
-            <img src="./imgs/carrinho-de-compras.png" class="carrinho-img" />
-          </div>
-        </div>
-      </section>
-      <section>
-        <label for="cupomtxt">Cupom:</label>
-        <input type="text" id="cupomtxt" name="cupomtxt" />
-        <button onclick="aplicarCupom()">Aplicar Cupom</button>
-        <button onclick="mostraCupons()">Cupons de teste</button>
-        <div class="mensagem"></div>
-      </section>
-    </main>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padaria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <h1>Autoatendimento</h1>
+    <section>
+      <h2>Objetivos dessa brincadeira:</h2>
+      <ul>
+        <li>Adicionar itens a um carrinho</li>
+        <li>Deter o total da compra ao final</li>
+        <li>Aplicar cupom valido</li>
+        <li>Finalizar venda com uma mensagem amigavel</li>
+      </ul>
+    </section>
+    <section class="produtos">
+      <h2>Cardapio</h2>
+      <div class="produtos-lista"></div>
+    </section>
+    <section class="coupon-container">
+      <label for="cupomtxt">Cupom:</label>
+      <input type="text" id="cupomtxt" name="cupomtxt" />
+      <button class="btn-appl-coupon">Aplicar Cupom</button>
+      <button class="btn-show-coupons">Cupons de teste</button>
+      <div class="mensagem"></div>
+    </section>
+    <section class="cart-container">
+      <h2>Carrinho</h2>
+      <div class="cart-ul-container">
+        <ul id="cart"></ul>
+        <span id="total-purchase"></span>
+        <button class="btn-purchase">Efetuar pagamento</button>
+      </div>
+    </section>
+  </main>
+  <script src="./js/main.js" type="module"></script>
+</body>
+
 </html>

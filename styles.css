@@ -8,7 +8,7 @@
 
 * {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 1rem;
 }
 
 body {
@@ -25,7 +25,7 @@ h1 {
 section {
   background-color: var(--white);
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px;
   margin: 5px;
 }
 
@@ -41,6 +41,11 @@ button {
 
 button:hover {
   filter: opacity(0.9);
+}
+
+.produtos {
+  height: 300px;
+  overflow-y: scroll;
 }
 
 .produtos ul {
@@ -94,29 +99,62 @@ button:hover {
   font-size: 0.8rem;
 }
 
-.carrinho-img {
-  width: 100px;
-  height: 100px;
+.coupon-container {
+  width: 80vw;
+  margin-left: 10vw;
 }
 
-.carrinho-container {
+.cart-container h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.cart-container {
+  margin-left: 10vw;
+  width: 80vw;
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: end;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.carrinho {
+.cart-ul-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.carrinho-itens {
-
+#cart {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow-y: scroll;
+  max-height: 100px;
 }
 
-.carrinho-btn-remover {
-  
+.btn-purchase {
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 15px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+#total-purchase {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: overline;
+  color: var(--white);
 }
